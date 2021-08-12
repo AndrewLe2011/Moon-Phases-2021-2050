@@ -1,0 +1,8 @@
+runtime: php74
+
+handlers:
+- url: /css
+  static_dir: css
+
+- url: /.*
+  script: auto

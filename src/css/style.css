@@ -1,0 +1,102 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+#navbar-container {
+  background: linear-gradient(
+    164deg,
+    rgba(255, 255, 255, 1) 70%,
+    #ff6242 92%
+  );
+  box-shadow: 0 0 15px 10px rgb(225 225 225 / 20%);
+}
+
+input::placeholder  {
+  font-style: italic;
+}
+
+#container1, #container2 {
+  box-shadow: 0 0 20px 15px rgb(225 225 225 / 20%);
+  border-radius: 30px;
+}
+
+/* On screens that are 1200px or more */
+@media only screen and (min-width: 1200px) {
+  #container2 {
+    width: 25%;
+  }
+}
+
+/* On screens that are 1200px or less */
+@media only screen and (max-width: 1200px) {
+  #navbar-container {
+    background: #f8f9fa;
+  }
+
+  #container2 {
+    width: 50%;
+  }
+
+  .container {
+    max-width: 1080px;
+  }
+}
+
+/* On screens that are 992px or less */
+@media only screen and (max-width: 992px) {
+  #navbar-container {
+    background: #f8f9fa;
+  }
+
+  #container2 {
+    width: 50%;
+  }
+
+  .container {
+    max-width: 800px;
+  }
+}
+
+/* On screens that are 768px or less */
+@media only screen and (max-width: 768px) {
+  #navbar-container {
+    background: #f8f9fa;
+  }
+
+  #navbar-title {
+    font-size: 1em;
+  }
+
+  #container2 {
+    width: 50%;
+  }
+
+  .container {
+    max-width: 600px;
+  }
+}
+
+/* On screens that are 576 or less */
+@media only screen and (max-width: 576px) {
+  #navbar-container {
+    background: #f8f9fa;
+  }
+
+  #navbar-title {
+    font-size: .83em;
+  }
+
+  #container2 {
+    width: 50%;
+  }
+
+  .container {
+    max-width: 300px;
+  }
+}
+
+
